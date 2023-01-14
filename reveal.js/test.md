@@ -9,7 +9,6 @@ title-slide-attributes:
   data-background-image: https://blog.oopsky.top/img/banner.webp
   data-background-size: auto
 ---
-
 # 一级标题
 
 ## 二级标题
@@ -66,9 +65,8 @@ pandoc -t revealjs -V theme=serif -s revealjs.md -o revealjs.html
 
 ## 更多主题以及文档
 
-- <https://revealjs.com/themes/>
-
-- <https://pandoc.org/MANUAL.html#slide-shows>
+- [https://revealjs.com/themes/](https://revealjs.com/themes/)
+- [https://pandoc.org/MANUAL.html#slide-shows](https://pandoc.org/MANUAL.html#slide-shows)
 
 # 测试
 
@@ -98,13 +96,15 @@ contents...
 :::
 ::::::::::::::
 
-## [数学公式](https://pandoc.org/MANUAL.html#frame-attributes-in-beamer){.fragile}
+## [数学公式](https://pandoc.org/MANUAL.html#frame-attributes-in-beamer) {.fragile}
 
 . . .
 
 块内公式
 
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+$$
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+$$
 
 . . .
 
@@ -114,7 +114,7 @@ $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 
 . . .
 
-其实不用`{.fragile}`属性，直接写公式也行
+其实不用 `{.fragile}` 属性，直接写公式也行
 
 ## 表格
 
@@ -136,7 +136,7 @@ $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 
 | 实验组 | 时间 |   数量 |
 | :----- | :--: | -----: |
-| >      | xxx  |        |
+| >      | xxx |        |
 | M2     |  2h  | 140000 |
 | M3     |  3h  | 160000 |
 
@@ -144,7 +144,7 @@ $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 
 | 实验组 | 时间 |   数量 |
 | :----- | :--: | -----: |
-| M1     |  >   |    xxx |
+| M1     |  >  |    xxx |
 | M2     |  2h  | 140000 |
 | M3     |  3h  | 160000 |
 
@@ -200,7 +200,7 @@ C-->D;
 
 . . .
 
-**(눈益눈)**
+**(눈 益 눈)**
 
 ## 看一下地球，放空一下
 
