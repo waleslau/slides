@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install pandoc
-if $(test -s $(pwd)/pandoc-2.19.2/bin/pandoc) || $(command -v pandoc >/dev/null 2>&1); then
+if $(test -s $(pwd)/pandoc-2.19.2/bin/pandoc) || hash pandoc 2>/dev/null; then
     echo 'already have pandoc here.'
 else
     echo -e "\e[36m install pandoc \e[0m"
@@ -11,7 +11,7 @@ else
 fi
 
 # install mdfmt
-if $(test -s $(pwd)/pandoc-2.19.2/bin/mdfmt) || $(command -v mdfmt >/dev/null 2>&1); then
+if $(test -s $(pwd)/pandoc-2.19.2/bin/mdfmt) || hash mdfmt 2>/dev/null; then
     echo 'already have mdfmt here.'
 else
     echo -e "\e[36m install mdfmt \e[0m"
