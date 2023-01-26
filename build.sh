@@ -24,7 +24,7 @@ fi
 echo -e "\tdo mdfmt -w *.md ..."
 for i in $(find . -name "*.md"); do mdfmt -w $i; done
 
-if test -s /etc/passwd && test -s /etc/os-release; then
+if [ "$(uname -s)" = "Linux" ]; then
     echo "You are use Linux now."
 else
     echo -e "\e[36m Widows: LF --> CRLF \e[0m"
