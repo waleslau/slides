@@ -3,7 +3,7 @@
 ## pandoc & reveal.js
 
 ```bash
-pandoc -t revealjs -M revealjs-url=https://cdn.jsdelivr.net/npm/reveal.js@4 --mathjax -s revealjs.md -o docs/index.html
+pandoc -t revealjs -M revealjs-url=https://npm.elemecdn.com/reveal.js@latest --mathjax -s revealjs.md -o docs/index.html
 ```
 
 ## Visual Studio Code & Markdown Preview Enhanced
